@@ -1,7 +1,8 @@
+<input type="text" class="form-control" (input)="onInputServerName($event)">
+<p>{{serverName}}</p>
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">add server</button>
 <p>{{createServerStatus}}</p>
 
-<input type="text" (input)="onInputServerName($event)">
 
 <app-server></app-server>
 <app-server></app-server>
