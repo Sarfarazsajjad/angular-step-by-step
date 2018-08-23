@@ -6,3 +6,9 @@
 
 <app-server></app-server>
 <app-server></app-server>
+
+<hr>
+<input type="text" class="form-control" [(ngModel)]="username">
+<p>{{username}}</p>
+<button class="btn btn-primary" [disabled]="username.length===0" (click)="resetUserName()">Reset UserName</button>
+<hr>
